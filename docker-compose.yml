@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  qpdtask.api:
+    image: ${DOCKER_REGISTRY-}qpdtaskapi
+    build:
+      context: .
+      dockerfile: QPDTask.Api/Dockerfile

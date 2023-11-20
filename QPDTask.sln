@@ -5,6 +5,15 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPDTask.Api", "QPDTask.Api\QPDTask.Api.csproj", "{FBF461D0-D111-4947-B32E-6E4F8A751E38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPDTask.Service", "QPDTask.Service\QPDTask.Service.csproj", "{F350D476-AF38-402C-AEF3-D6421B5116BF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{76F7E179-131A-4E09-BF32-4EC6DB539B43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{22DE475B-539C-40F1-AD7A-1FA9D2A8AD6C}"
+	ProjectSection(SolutionItems) = preProject
+		env.api = env.api
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +24,20 @@ Global
 		{FBF461D0-D111-4947-B32E-6E4F8A751E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF461D0-D111-4947-B32E-6E4F8A751E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF461D0-D111-4947-B32E-6E4F8A751E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F350D476-AF38-402C-AEF3-D6421B5116BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F350D476-AF38-402C-AEF3-D6421B5116BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F350D476-AF38-402C-AEF3-D6421B5116BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F350D476-AF38-402C-AEF3-D6421B5116BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F7E179-131A-4E09-BF32-4EC6DB539B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F7E179-131A-4E09-BF32-4EC6DB539B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F7E179-131A-4E09-BF32-4EC6DB539B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F7E179-131A-4E09-BF32-4EC6DB539B43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76F7E179-131A-4E09-BF32-4EC6DB539B43} = {22DE475B-539C-40F1-AD7A-1FA9D2A8AD6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF947E34-5AB6-4BA3-AF40-7A2E98C69DDE}
